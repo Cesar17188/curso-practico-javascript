@@ -36,20 +36,61 @@ body {
   background: linear-gradient(#3b479d, #030708);
 }
 
-.operaciones_cuadrado {
+.operacion {
   width: 100%;
-  display: grid;
 }
 
-.operaciones_cuadrado_title {
+.operacion_title {
   margin: 0px;
   margin-left: -50px;
   width: 100%;
   text-align: center;
+  padding-bottom: 20px;
 }
 
-.operaciones_cuadrado_img {
+.operacion_img {
   width: 100px;
+}
+
+.operacion_formulario {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  justify-items: center;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.operacion_cuadrado_formulario_lado {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+.operacion_cuadrado_formulario_input_lado {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+.operacion_cuadrado_formulario_buttons {
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
+
+.operacion_triangulo_img {
+  width: 100px;
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
+
+.operacion_triangulo_formulario_inputs {
+  grid-column-start: 2;
+}
+
+.operacion_triangulo_formulario_buttons {
+  grid-column-start: 4;
+  grid-row-start: 2;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

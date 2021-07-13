@@ -19,21 +19,21 @@
     </header>
 
     <div class="operaciones">
-        <section class="operaciones_cuadrado">
-            <h2 class="operaciones_cuadrado_title">Calcula el área y perímetro de un cuadrado</h2>
-            <form class="operaciones_cuadrado_formulario" action="">
-                <img class="operaciones_cuadrado_img" src="./image/cuadrado.png" alt="cuadrado">
-                <label class="operaciones_cuadrado_formulario_lado" for="InputCuadrado">
+        <section class="operacion">
+            <h2 class="operacion_title">Calcula el área y perímetro de un cuadrado</h2>
+            <form class="operacion_formulario" action="">
+                <img class="operacion_img" src="./image/cuadrado.png" alt="cuadrado">
+                <label class="operacion_cuadrado_formulario_lado" for="InputCuadrado">
                     Escribe cuánto mide cada lado de tu cuadrado
                 </label>
-                <input class="operaciones_cuadrado_formulario_input_lado" id="InputCuadrado" placeholder="5"
+                <input class="operacion_cuadrado_formulario_input_lado" id="InputCuadrado" placeholder="5"
                     type="number">
-                <div class="operaciones_cuadrado_formulario_buttons">
-                    <button class="operaciones_cuadrado_formulario_buttons_perimetro" type="button"
+                <div class="operacion_cuadrado_formulario_buttons">
+                    <button class="operacion_cuadrado_formulario_buttons_perimetro" type="button"
                         onclick="calcularPerimetroCuadrado()">
                         Calcular el perímetro
                     </button>
-                    <button class="operaciones_cuadrado_formulario_buttons_area" type="button"
+                    <button class="operacion_cuadrado_formulario_buttons_area" type="button"
                         onclick="calcularAreaCuadrado()">
                         Calcular el área
                     </button>
@@ -41,50 +41,63 @@
             </form>
         </section>
 
-        <section class="operaciones_triangulo">
-            <h2>Calcula el área y perímetro de un triángulo</h2>
-            <form action="">
-                <label for="InputTriangulo1">
-                    Escribe cuánto mide cada lado 1 de tu triángulo
-                </label>
-                <input id="InputTriangulo1" placeholder="5" type="number">
-                <label for="InputTriangulo2">
-                    Escribe cuánto mide cada lado 2 de tu triángulo
-                </label>
-                <input id="InputTriangulo2" placeholder="5" type="number">
-                <label for="InputTrianguloBase">
-                    Escribe cuánto mide la base de tu triángulo
-                </label>
-                <input id="InputTrianguloBase" placeholder="5" type="number">
-                <label for="InputTrianguloAltura">
-                    Escribe cuánto mide la altura de tu triángulo
-                </label>
-                <input id="InputTrianguloAltura" placeholder="5" type="number">
-                <button type="button" onclick="calcularPerimetroTriangulo()">
-                    Calcular el perímetro
-                </button>
-                <button type="button" onclick="calcularAreaTriangulo()">
-                    Calcular el área
-                </button>
+        <section class="operacion">
+            <h2 class="operacion_title">Calcula el área y perímetro de un triángulo</h2>
+            <form class="operacion_formulario" action="">
+                <img class="operacion_triangulo_img" src="./image/triangulo.png" alt="triangulo">
+                <div class="operacion_triangulo_formulario_inputs">
+                    <label class="operacion_triangulo_formulario_lado" for="InputTriangulo1">
+                        Escribe cuánto mide cada lado 1 de tu triángulo
+                    </label>
+                    <input class="operacion_triangulo_formulario_input_lado" id="InputTriangulo1" placeholder="5"
+                        type="number">
+                    <label for="InputTriangulo2">
+                        Escribe cuánto mide cada lado 2 de tu triángulo
+                    </label>
+                    <input id="InputTriangulo2" placeholder="5" type="number">
+                    <label for="InputTrianguloBase">
+                        Escribe cuánto mide la base de tu triángulo
+                    </label>
+                    <input id="InputTrianguloBase" placeholder="5" type="number">
+                    <label for="InputTrianguloAltura">
+                        Escribe cuánto mide la altura de tu triángulo
+                    </label>
+                    <input id="InputTrianguloAltura" placeholder="5" type="number">
+                </div>
+                <div class="operacion_triangulo_formulario_buttons">
+                    <button type="button" onclick="calcularPerimetroTriangulo()">
+                        Calcular el perímetro
+                    </button>
+                    <button type="button" onclick="calcularAreaTriangulo()">
+                        Calcular el área
+                    </button>
+                </div>
             </form>
         </section>
 
-        <section class="operaciones_circulo">
-            <h2>Calcula el área y perímetro de un círculo</h2>
-            <form action="">
-                <label for="InputRadio">
+        <section class="operacion">
+            <h2 class="operacion_title">Calcula el área y perímetro de un círculo</h2>
+            <form class="operacion_formulario" action="">
+                <img class="operacion_img" src="./image/circulo7.png" alt="circulo">
+                <label class="operacion_cuadrado_formulario_lado" for="InputRadio">
                     Escribe cuánto mide el radio de tu círculo
                 </label>
-                <input id="InputRadio" placeholder="5" type="number">
-                <button type="button" onclick="calcularPerimetroCirculo()">
-                    Calcular el perímetro
-                </button>
-                <button type="button" onclick="calcularAreaCirculo()">
-                    Calcular el área
-                </button>
+                <input class="operacion_cuadrado_formulario_input_lado" id="InputRadio" placeholder="5" type="number">
+                <div class="operacion_cuadrado_formulario_buttons">
+                    <button type="button" onclick="calcularPerimetroCirculo()">
+                        Calcular el perímetro
+                    </button>
+                    <button type="button" onclick="calcularAreaCirculo()">
+                        Calcular el área
+                    </button>
+                </div>
             </form>
         </section>
     </div>
+
+    <footer>
+        <p>Operaciones</p>
+    </footer>
 
     <script src="./figuras.js"></script>
 </body>
