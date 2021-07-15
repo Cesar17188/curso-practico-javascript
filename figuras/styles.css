@@ -93,4 +93,14 @@ body {
   align-items: center;
 }
 
+.footer {
+  width: 100%;
+  color: white;
+  background: #030708;
+}
+
+.footer_title {
+  margin: 0;
+}
+
 /*# sourceMappingURL=styles.css.map */
