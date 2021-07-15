@@ -5,11 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./isoceles.css">
+    <title>Altura Triangulo Isoceles</title>
 </head>
 
 <body>
+    <header class="header">
+        <h1 class="header_title">
+            Altura Triangulo Isoceles
+        </h1>
+        <p class="header_subtitle">Ejercicio práctico de JavaScript</p>
+    </header>
 
+    <div class="operaciones">
+        <section class="operacion">
+            <h2 class="operacion_title">Calcula la altura de un triángulo isóceles</h2>
+            <form class="operacion_formulario" action="">
+                <img class="operacion_img" src="./image/triangulo.png" alt="triangulo">
+                <div class="operacion_lados">
+                    <label class="operacion_triangulo_formulario" for="InputLadoTriangulo">
+                        Escribe cuánto mide cada lado de tu triángulo isocéles
+                    </label>
+                    <input class="operacion_triangulo_formulario_input" id="InputLadoTriangulo" placeholder="5"
+                        type="number">
+                </div>
+                <div class="operacion_base">
+                    <label class="operacion_triangulo_formulario" for="InputBaseTriangulo">
+                        Escribe cuánto mide la base de tu triángulo isocéles
+                    </label>
+                    <input class="operacion_triangulo_formulario_input" id="InputBaseTriangulo" placeholder="5"
+                        type="number">
+                </div>
+
+                <div class="operacion_triangulo_formulario_buttons">
+                    <button class="operacion_triangulo_formulario_buttons_altura" type="button"
+                        onclick="calculo_altura_triangulo()">
+                        Calcular La altura
+                    </button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p class="footer_title">Operaciones</p>
+    </footer>
+
+    <script src="./isoceles.js"></script>
 </body>
 
 </html>
