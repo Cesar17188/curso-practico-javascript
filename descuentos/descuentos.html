@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Porcentajes y descuentos | Curso práctico de JS de platzi</title>
 </head>
 
@@ -13,8 +14,56 @@
         <h1>
             Porcentajes y descuentos
         </h1>
+        <p>producto a comprar</p>
     </header>
 
+    <section>
+        <div>
+            <div>
+                <h3>Producto</h3>
+                <p>descripción</p>
+            </div>
+            <div>
+                <img src="./image/case.png" alt="">
+                <p>precio</p>
+                <p>$ 900</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h3>Descuentos</h3>
+                <p>tipo de descuento</p>
+            </div>
+            <div>
+                <input type="radio" name="descuentos" value="1" checked>descuento normal
+                <input type="radio" name="descuentos" value="2">tengo cupones
+                <button onclick="tipoDescuento()">ver descuento</button>
+            </div>
+            <div id="descuento_normal">
+                <p>descuento normal 15%</p>
+                <div>
+                    <p>total ahorro</p>
+                    <p id="total_ahorro"></p>
+                    <p>total a pagar</p>
+                    <p id="num_desc"></p>
+                </div>
+            </div>
+            <div id="descuento_cupon">
+                <p>descuento con cupones</p>
+                <div>
+                    <p>Ingresa tu cupón</p>
+                    <input id="calc_desc" type="text">
+                    <button onclick="calcular_descuento()">cálcular descuento</button>
+                </div>
+                <div>
+                    <p>total ahorro</p>
+                    <p id="total_ahorro_cupon"></p>
+                    <p>total a pagar</p>
+                    <p id="num_desc_cupon"></p>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="./descuentos.js"></script>
 </body>
 
