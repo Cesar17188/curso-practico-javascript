@@ -10,34 +10,33 @@
 </head>
 
 <body>
-    <header>
-        <h1>
+    <header class="header">
+        <h1 class="header_title">
             Porcentajes y descuentos
         </h1>
-        <p>producto a comprar</p>
+        <p class="header_subtitle">producto a comprar</p>
     </header>
 
-    <section>
-        <div>
-            <div>
-                <h3>Producto</h3>
+    <section class="descuentos">
+        <div class="descuentos_producto">
+            <div class="descuento_producto_title">
+                <h1>Producto</h1>
                 <p>descripción</p>
             </div>
-            <div>
-                <img src="./image/case.png" alt="">
-                <p>precio</p>
-                <p>$ 900</p>
+            <div class="descuento_producto_normal">
+                <img class="image" src="./image/case2.png" alt="">
+                <p class="decuento_producto_normal_precio">Precio: 900 $</p>
             </div>
         </div>
-        <div>
-            <div>
-                <h3>Descuentos</h3>
+        <div class="descuentos_producto">
+            <div class="descuento_producto_title">
+                <h1>Descuentos</h1>
                 <p>tipo de descuento</p>
             </div>
-            <div>
+            <div class="descuentos_producto_selector">
                 <input type="radio" name="descuentos" value="1" checked>descuento normal
                 <input type="radio" name="descuentos" value="2">tengo cupones
-                <button onclick="tipoDescuento()">ver descuento</button>
+                <button class="descuentos_producto_selector_button" onclick="tipoDescuento()">ver descuento</button>
             </div>
             <div id="descuento_normal">
                 <p>descuento normal 15%</p>
@@ -52,8 +51,9 @@
                 <p>descuento con cupones</p>
                 <div>
                     <p>Ingresa tu cupón</p>
-                    <input id="calc_desc" type="text">
-                    <button onclick="calcular_descuento()">cálcular descuento</button>
+                    <input class="descuento_cupon_input" id="calc_desc" type="text" placeholder="cupon_1">
+                    <button class="descuentos_producto_selector_button" onclick="calcular_descuento()">cálcular
+                        descuento</button>
                 </div>
                 <div>
                     <p>total ahorro</p>
@@ -64,6 +64,10 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <p class="footer_title">descuentos</p>
+    </footer>
     <script src="./descuentos.js"></script>
 </body>
 

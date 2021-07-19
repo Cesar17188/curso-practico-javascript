@@ -1,4 +1,5 @@
 const cupones = ["JuanDC_es_Batman", "pero_no_digas_a_nadie", "es_un_secreto"];
+
 console.group("descuentos");
 
 function calcularPrecioConDescuento(precio, descuento) {
@@ -41,8 +42,6 @@ function calcular_descuento() {
   document.getElementById("total_ahorro_cupon").innerHTML = ahorro;
   document.getElementById("num_desc_cupon").innerHTML = desc;
 }
-
-const cuponDescuento = validarCuponDescuento("cupon3");
 
 function tipoDescuento() {
   let eleccion = document.querySelector(
