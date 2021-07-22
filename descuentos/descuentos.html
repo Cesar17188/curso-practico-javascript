@@ -25,7 +25,7 @@
             </div>
             <div class="descuento_producto_normal">
                 <img class="image" src="./image/case2.png" alt="">
-                <p class="decuento_producto_normal_precio">Precio: 900 $</p>
+                <p class="decuento_producto_normal_precio" id="precioOriginal"></p>
             </div>
         </div>
         <div class="descuentos_producto">
@@ -52,11 +52,12 @@
                 <div>
                     <p>Ingresa tu cupón</p>
                     <input class="descuento_cupon_input" id="calc_desc" type="text" placeholder="cupon_1">
-                    <button class="descuentos_producto_selector_button" onclick="calcular_descuento()">cálcular
+                    <button class="descuentos_producto_selector_button" onclick="calcular_descuento()"
+                        type="button">cálcular
                         descuento</button>
                 </div>
                 <div>
-                    <p>total ahorro</p>
+                    <p>% total ahorro</p>
                     <p id="total_ahorro_cupon"></p>
                     <p>total a pagar</p>
                     <p id="num_desc_cupon"></p>

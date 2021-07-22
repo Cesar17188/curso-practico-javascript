@@ -1,3 +1,7 @@
+const precioOriginal = 900;
+const descuento = 15;
+const precioO = document.getElementById("precioOriginal");
+precioO.innerText = "Precio: " + precioOriginal + "$";
 const cupones = ["JuanDC_es_Batman", "pero_no_digas_a_nadie", "es_un_secreto"];
 
 console.group("descuentos");
@@ -7,11 +11,11 @@ function calcularPrecioConDescuento(precio, descuento) {
   return precioConDescuento;
 }
 
-const precioPCDescuento = calcularPrecioConDescuento(900, 15);
+const precioPCDescuento = calcularPrecioConDescuento(precioOriginal, descuento);
 
-function sendDescuento() {
+function sendDescuento(precioOriginal) {
   const desc = precioPCDescuento;
-  const ahorro = 900 - desc;
+  const ahorro = precioOriginal - desc;
   document.getElementById("total_ahorro").innerHTML = ahorro;
   document.getElementById("num_desc").innerHTML = desc;
 }
@@ -37,8 +41,8 @@ function validarCuponDescuento(cupon) {
 function calcular_descuento() {
   const descuento = document.getElementById("calc_desc").value;
   const porcentajeDescuento = validarCuponDescuento(descuento);
-  const desc = calcularPrecioConDescuento(900, porcentajeDescuento);
-  const ahorro = 900 - desc;
+  const desc = calcularPrecioConDescuento(precioOriginal, porcentajeDescuento);
+  const ahorro = precioOriginal - desc;
   document.getElementById("total_ahorro_cupon").innerHTML = ahorro;
   document.getElementById("num_desc_cupon").innerHTML = desc;
 }
@@ -48,7 +52,7 @@ function tipoDescuento() {
     'input[name="descuentos"]:checked'
   ).value;
   console.log(eleccion);
-  sendDescuento();
+  sendDescuento(precioOriginal);
   habilitarDescuento(eleccion);
 }
 
