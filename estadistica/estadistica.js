@@ -10,6 +10,16 @@ function calcularMediaAritmetica(lista) {
   return promedioLista;
 }
 
+function calcularMediaGeometrica(lista) {
+  const sumaLista = lista.reduce(function (valorAcumulado = 1, nuevoElemento) {
+    return valorAcumulado * nuevoElemento;
+  });
+
+  const promedioLista = Math.pow(sumaLista, 1 / lista.length);
+
+  return promedioLista;
+}
+
 function calcularMediana(lista) {
   listaOrdenada = lista.sort(function (a, b) {
     return a - b;
