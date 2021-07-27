@@ -5,71 +5,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./endeudamiento.css">
     <title>Capacidad de endeudamiento</title>
 </head>
 
 <body>
 
-    <head>
-        <h1>CAPACIDAD DE ENDEUDAMIENTO</h1>
-        <p>Cuanto puedes endeudarte en base a tu ingreso</p>
-    </head>
+    <header class="header">
+        <h1 class="header_title">CAPACIDAD DE ENDEUDAMIENTO</h1>
+        <p class="header_subtitle">Cuanto puedes endeudarte en base a tu ingreso en dólares</p>
+    </header>
 
-    <section>
-        <form action="">
-            <div>
+    <section class="formulario">
+        <form class="formulario_form" id="formulario" action="">
+            <div class="formulario_box">
                 <h2>Ingresos</h2>
-                <label for="totalIngresos">Ingresa el monto total de tus ingresos por mes</label>
-                <input id="totalIngresos" type="number">
+                <label class="formulario_box_label" for="totalIngresos">Ingresa el monto total de tus ingresos por
+                    mes</label>
+                <input class="formulario_box_input" id="totalIngresos" type="number" value="0" placeholder="0">
             </div>
-            <div>
+            <div class="formulario_box">
                 <h2>Gastos Fijos</h2>
                 <p>Ingresa el valor de los gastos en los siguientes rubros</p>
                 <div>
-                    <label for="serviciosBasicos">Servicios Básicos</label>
-                    <input id="serviciosBasicos" type="number">
+                    <label class="formulario_box_label" for="serviciosBasicos">Servicios Básicos</label>
+                    <input class="formulario_box_input" id="serviciosBasicos" type="number" value="0">
                 </div>
                 <div>
-                    <label for="alquiler">Alquiler (si existe)</label>
-                    <input id="alquiler" type="number">
+                    <label class="formulario_box_label" for="alquiler">Alquiler (si existe)</label>
+                    <input class="formulario_box_input" id="alquiler" type="number" value="0">
                 </div>
                 <div>
-                    <label for="alimentacion">Alimentación</label>
-                    <input id="alimentacion" type="number">
+                    <label class="formulario_box_label" for="alimentacion">Alimentación</label>
+                    <input class="formulario_box_input" id="alimentacion" type="number" value="0">
                 </div>
                 <div>
-                    <label for="transporte">Transporte</label>
-                    <input id="transporte" type="number">
+                    <label class="formulario_box_label" for="transporte">Transporte</label>
+                    <input class="formulario_box_input" id="transporte" type="number" value="0">
                 </div>
                 <div>
-                    <label for="deudasPrevias">Deudas previas (bancos, almacenes, etc)</label>
-                    <input id="deudasPrevias" type="number">
+                    <label class="formulario_box_label" for="deudasPrevias">Deudas previas (bancos, almacenes,
+                        etc)</label>
+                    <input class="formulario_box_input" id="deudasPrevias" type="number" value="0">
                 </div>
             </div>
-            <div>
+            <div class="formulario_box">
                 <h2>Gastos Variables</h2>
                 <p>Ingresa el valor de los gastos en los siguientes rubros de existir</p>
                 <div>
-                    <label for="entretenimiento">Entretenimiento</label>
-                    <input id="entretenimiento" type="number">
+                    <label class="formulario_box_label" for="entretenimiento">Entretenimiento</label>
+                    <input class="formulario_box_input" id="entretenimiento" type="number" value="0">
                 </div>
                 <div>
-                    <label for="vacaciones">Vacaciones</label>
-                    <input id="vacaciones" type="number">
+                    <label class="formulario_box_label" for="vacaciones">Vacaciones</label>
+                    <input class="formulario_box_input" id="vacaciones" type="number" value="0">
                 </div>
                 <div>
-                    <label for="varios">Gastos Varios</label>
-                    <input id="varios" type="number">
+                    <label class="formulario_box_label" for="varios">Gastos Varios</label>
+                    <input class="formulario_box_input" id="varios" type="number" value="0">
                 </div>
             </div>
-            <div>
-                <button>Limpiar formulario</button>
-                <button>Calcular</button>
+            <div class="formulario_box">
+                <button class="formulario_box_boton" onclick="limpiarFormulario()">Limpiar formulario</button>
+                <button class="formulario_box_boton" type="button" onclick="capacidadEndeudamiento()">Calcular</button>
                 <h2>Capacidad de endeudamiento</h2>
                 <h1 id="capacidadEndeudamiento"></h1>
             </div>
         </form>
     </section>
+    <footer class="footer">
+        <h2 class="footer_title">Capacidad de endeudamiento personal</h2>
+    </footer>
 </body>
+
+<script src="./endeudamiento.js"></script>
 
 </html>
